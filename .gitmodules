@@ -1,0 +1,3 @@
+[submodule "libs/Se34"]
+	path = libs/Se34
+	url = git@github.com:Clevisaci/Se34.git
