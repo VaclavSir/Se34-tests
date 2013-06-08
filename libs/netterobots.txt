@@ -1,0 +1,5 @@
+Disallow: /bin
+Disallow: /composer
+Disallow: /nette
+Disallow: /phpunit
+Disallow: /symfony
