@@ -1,0 +1,16 @@
+
+parameters:
+	selenium:
+		baseUrl: http://localhost/Se34-tests/fake-root/
+
+nette:
+	database:
+		dsn: 'mysql:host=localhost'
+		user: root
+		password:
+		options:
+			lazy: yes
+
+services:
+	templateFactory: Tests\FakeRootTemplateFactory( App\TemplateFactory() )
+	router: Tests\FakeRootRouter( @App\RouterFactory::createRouter() )

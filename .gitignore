@@ -2,6 +2,7 @@ log/*
 temp/*
 libs/*
 !libs/Se34
+fake-root/temp/*
 tests-phpunit/temp/*
 tests-phpunit/tests.local-*.neon
 
