@@ -3,6 +3,7 @@ temp/*
 libs/*
 !libs/Se34
 tests-phpunit/temp/*
+tests-phpunit/tests.local-*.neon
 
 .DS_Store
 !.gitignore

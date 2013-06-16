@@ -1,0 +1,11 @@
+
+parameters:
+	selenium:
+		baseUrl: Set the URL in tests.local-real.neon and tests.local-fake.neon
+		seleniumServer: http://localhost:4444
+		desiredCapabilities:
+			browserName: chrome
+
+nette:
+	security:
+		frames:

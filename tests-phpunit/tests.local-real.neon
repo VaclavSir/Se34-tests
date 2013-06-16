@@ -1,0 +1,4 @@
+
+parameters:
+	selenium:
+		baseUrl: http://localhost/Se34-tests/www/
