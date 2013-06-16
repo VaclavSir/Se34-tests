@@ -2,6 +2,7 @@ log/*
 temp/*
 libs/*
 !libs/Se34
+tests-phpunit/temp/*
 
 .DS_Store
 !.gitignore
