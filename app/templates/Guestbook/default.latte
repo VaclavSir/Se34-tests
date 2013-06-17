@@ -1,0 +1,23 @@
+
+{#title}Guestbook{/#}
+
+{#content}
+
+<h1>Guestbook</h1>
+
+{form submissionForm}
+	<p>{label name /}{input name} {label email /}{input email}</p>
+	<p>{input message}</p>
+	<p>{input add}</p>
+{/form}
+
+<hr>
+
+<div n:foreach="$messages as $message">
+	<p>
+		<b><a href="mailto:{$message->email}">{$message->name}</a></b>
+		<i>{$message->submission_time}</i>
+	</p>
+	<p>{$message->message}</p>
+	<hr>
+</div>
