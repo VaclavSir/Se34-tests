@@ -84,6 +84,16 @@ class BrowserSession_Test extends RealApplicationTestCase
 		$this->assertSame('Guestbook', $this->session->getAppRequest($url)->presenterName);
 	}
 
+	public function testGetUrlScript()
+	{
+		$this->session->url($this->session->getLink('Homepage'));
+		$urlScript = $this->session->urlScript;
+		$baseUrlParts = parse_url($this->context->parameters['selenium']['baseUrl']);
+		$this->assertSame($baseUrlParts['host'], $urlScript->host);
+		$this->assertSame($baseUrlParts['path'], $urlScript->path);
+		$this->assertSame($baseUrlParts['path'], $urlScript->scriptPath);
+	}
+
 	public function testDoubleClick()
 	{
 		$this->session->navigate('Homepage', 'action=another');
