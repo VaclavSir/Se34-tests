@@ -195,7 +195,7 @@ class Homepage_another extends Se34\PageObject
 {
 
 	protected $presenterName = 'Homepage';
-	protected $parameters = 'action = another';
+	protected $presenterParameters = 'action = another';
 
 	public function getNotAnElement()
 	{
