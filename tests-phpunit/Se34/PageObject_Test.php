@@ -167,16 +167,19 @@ class PageObject_Test extends RealApplicationTestCase
 
 /**
  * Fixture pro test PageObject_Test.
+ *
+ * @url https://www.facebook.com/
  */
 class FacebookHomepage extends Se34\PageObject
 {
-
-	protected $url = 'https://www.facebook.com/';
 
 }
 
 /**
  * PageObject_Test fixture.
+ *
+ * @presenterName Homepage
+ * @presenterParameters action = another
  *
  * @property-read \Se34\Element $messageBox name = message, input, [type=text] # Comment
  * @property-read \Se34\Element $title tag name = h1, h1
@@ -193,9 +196,6 @@ class FacebookHomepage extends Se34\PageObject
  */
 class Homepage_another extends Se34\PageObject
 {
-
-	protected $presenterName = 'Homepage';
-	protected $presenterParameters = 'action = another';
 
 	public function getNotAnElement()
 	{
