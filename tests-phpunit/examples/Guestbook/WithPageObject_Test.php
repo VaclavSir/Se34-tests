@@ -5,7 +5,7 @@ namespace Tests\Guestbook;
 use Nette\Database\Connection;
 use Tests\FakeRootTestCase;
 
-class AddingMessages_Test extends FakeRootTestCase
+class WithPageObject_Test extends FakeRootTestCase
 {
 
 	/**

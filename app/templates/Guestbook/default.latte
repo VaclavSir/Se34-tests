@@ -13,11 +13,11 @@
 
 <hr>
 
-<div n:foreach="$messages as $message">
+<div n:foreach="$messages as $message" class="guestbook-message">
 	<p>
 		<b><a href="mailto:{$message->email}">{$message->name}</a></b>
 		<i>{$message->submission_time}</i>
 	</p>
-	<p>{$message->message}</p>
+	<p class="content">{$message->message}</p>
 	<hr>
 </div>
